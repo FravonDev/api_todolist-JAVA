@@ -1,32 +1,17 @@
 package br.com.flavioadriano.todolist.user;
 
+import lombok.Data;
+
+@Data // ajuda a criar os getters e setters automaticamente
+// @Getter apenas getters
+// @Setter apenas setters
 public class UserModel {
     private String username;
+    // também podemos definir para atributos especificos
+    // @Getter
     private String name;
+
+    // @Setter
     private String password;
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
 }
