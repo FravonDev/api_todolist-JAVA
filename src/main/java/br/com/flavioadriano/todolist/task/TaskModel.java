@@ -1,6 +1,6 @@
 package br.com.flavioadriano.todolist.task;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -22,10 +22,10 @@ public class TaskModel {
     private String description;
     private String status;
     private String priority;
-    private LocalDate startAt;
-    private LocalDate endAt;
+    private LocalDateTime startAt;
+    private LocalDateTime endAt;
 
     @CreationTimestamp
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
     private UUID idUser;
 }
