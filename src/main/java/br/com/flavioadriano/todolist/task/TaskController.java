@@ -26,7 +26,7 @@ public class TaskController {
         System.out.println("chegou no task controller" + request.getAttribute("idUser"));
         var idUser = request.getAttribute("idUser");
         var currentDate = LocalDateTime.now();
-        if (currentDate.isBefore(taskModel.getStartAt())) {
+        if (currentDate.isAfter(taskModel.getStartAt())) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                     .body("Data de inicio deve ser maior que a data atual");
         }
