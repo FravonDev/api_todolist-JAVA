@@ -1,7 +1,7 @@
 <div align="center">
-<img src="https://github.com/FravonDev/api_todolist-JAVA/assets/java.png" width="800px">
+<img src="https://github.com/FravonDev/api_todolist-JAVA/blob/main/assets/java.png" width="800px">
 </br>
-
+<div/>
 ## Temas Abordados
 
 - Construção do back-end de uma aplicação de To-Do List utilizando Java;
